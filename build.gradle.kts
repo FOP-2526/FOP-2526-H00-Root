@@ -1,3 +1,5 @@
+
+
 plugins {
     alias(libs.plugins.algomate)
     alias(libs.plugins.style)
@@ -7,6 +9,11 @@ version = file("version").readLines().first()
 
 exercise {
     assignmentId.set("h00")
+}
+
+// Für FopBot
+dependencies{
+    implementation(libs.fopbot)
 }
 
 submission {
