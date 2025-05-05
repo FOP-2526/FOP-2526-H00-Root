@@ -22,7 +22,7 @@ public class Main {
         // This sets up the FOPBot World with a 4x4 grid. (DO NOT TOUCH)
         setupWorld();
 
-        // TODO: H0.1 - Initializing FOPBot and move
+        // TODO: H0.4 - Initializing FOPBot and move
         Robot robot = new Robot(1,2, Direction.UP,5, RobotFamily.SQUARE_GREEN);
         robot.move();
         robot.putCoin();
