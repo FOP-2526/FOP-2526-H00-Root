@@ -8,15 +8,9 @@ import fopbot.*;
 public class Main {
 
     /**
-     * The subtask to run.
-     */
-    public static int runToSubtask = -1;
-
-    /**
      * The world speed in milliseconds.
      */
-    public static int delay = 300;
-
+    public static int delay = 1000;
 
     /**
      * Main entry point in executing the program.
@@ -29,12 +23,12 @@ public class Main {
         setupWorld();
 
         // TODO: H0.1 - Initializing FOPBot and move
-        Robot robot = new Robot(0,0, Direction.UP,4, RobotFamily.SQUARE_BLUE);
+        Robot robot = new Robot(1,2, Direction.UP,5, RobotFamily.SQUARE_GREEN);
         robot.move();
         robot.putCoin();
 
-    }
 
+    }
 
     public static void setupWorld() {
         // variable representing width/size of world
