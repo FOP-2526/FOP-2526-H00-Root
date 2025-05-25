@@ -34,6 +34,6 @@ public class H00_RubricProvider implements RubricProvider {
 
     @Override
     public Rubric getRubric() {
-        return null;
+        return RUBRIC;
     }
 }
