@@ -9,7 +9,7 @@ import org.tudalgo.algoutils.tutor.general.json.JsonParameterSet;
 import static org.tudalgo.algoutils.tutor.general.jagr.RubricUtils.criterion;
 
 
-public class H00_RubricProvider implements RubricProvider {
+public class H00_RubricProviderPrivate implements RubricProvider {
 
     public static final Rubric RUBRIC = Rubric.builder()
         .title("H00 | Erste Schritte mit Java & FopBot")
@@ -20,16 +20,14 @@ public class H00_RubricProvider implements RubricProvider {
                 .maxPoints(1)
             .build(),
             Criterion.builder()
-                .shortDescription("H0.4 | Erste Programm mit dem FopBot")
+                .shortDescription("H0.4 | Erstes Programm mit dem FopBot")
                 .addChildCriteria(
-                    criterion(
-                        "Der Konstruktor von Robot wurde mit korrekten Parametern aufgerufen."
-                    )
+                    criterion("Der Konstruktor von Robot wurde mit korrekten Parametern aufgerufen.",
+                        JUnitTestRef.ofMethod(() -> MainTest.class.getDeclaredMethod("testConstructorCall")))
                 )
                 .minPoints(0)
                 .maxPoints(1)
                 .build()
-
         ).build();
 
     @Override
