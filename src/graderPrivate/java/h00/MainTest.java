@@ -4,7 +4,6 @@ import fopbot.*;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.sourcegrade.jagr.api.rubric.TestForSubmission;
-import org.tudalgo.algoutils.tutor.general.assertions.Context;
 
 import static org.tudalgo.algoutils.tutor.general.assertions.Assertions2.*;
 
@@ -14,7 +13,7 @@ public class MainTest {
     @BeforeAll
     public static void setup() {
         Main.delay = 0;
-        Main.isVisible = false;
+//        Main.isVisible = false;
     }
 
     @Test

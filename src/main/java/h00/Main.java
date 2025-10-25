@@ -17,8 +17,8 @@ public class Main {
     /**
      * Whether the world is visible.
      */
-    @DoNotTouch
-    public static boolean isVisible = true;
+//    @DoNotTouch
+//    public static boolean isVisible = true;
 
     /**
      * Main entry point in executing the program.
@@ -49,6 +49,6 @@ public class Main {
         World.setDelay(delay);
 
         // make it possible to see the world window
-        World.setVisible(isVisible);
+        World.setVisible(true);
     }
 }
